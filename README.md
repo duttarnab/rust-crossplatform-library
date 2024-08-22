@@ -19,6 +19,8 @@
     cd ../helloPython
     ```
 
+#### Running `python` Module
+
 3. Create a new virtual environment in ./venv directory with:
 
     ```
@@ -48,4 +50,31 @@
     ```
     cd ../python
     python main.py
+    ```
+
+#### Running `pythonPoetry` Module
+
+
+3. Install `poetry`
+
+    ```
+    curl -sSL https://install.python-poetry.org | python -
+    poetry --version
+    ```
+
+4. Change directory to `pythonPoetry`
+
+    ```
+    cd ../pythonPoetry
+    ```
+
+5. Install the project's dependencies as specified in the poetry.lock file.
+
+    ```
+    poetry install
+    ```
+6. Run PythonPoetry project
+
+    ```
+    poetry run pythonPoetry
     ```

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pythonpoetry"
+version = "0.1.0"
+description = ""
+authors = ["Arnab Dutta <arnab.bdutta@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+pythonPoetry = 'pythonpoetry:cli'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+helloPython = { file = "../helloPython/target/wheels/helloPython-0.1.0-cp310-none-win_amd64.whl" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
