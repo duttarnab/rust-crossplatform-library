@@ -19,8 +19,6 @@
     cd ../helloPython
     ```
 
-#### Running `python` Module
-
 3. Create a new virtual environment in ./venv directory with:
 
     ```
@@ -39,11 +37,13 @@
     pip install maturin
     ```
 
-6.  At this point, we can use Maturin to test the project: 
+6.  At this point, we can use Maturin to build and test the project:  
 
     ```
+    maturin build
     maturin develop
     ```
+#### Running `python` Module
 
 7. Change directory to python directory. Execute `python main.py`.
 
@@ -54,26 +54,27 @@
 
 #### Running `pythonPoetry` Module
 
+7. Exit virtual environment
 
-3. Install `poetry`
+8. Install `poetry`
 
     ```
     curl -sSL https://install.python-poetry.org | python -
     poetry --version
     ```
 
-4. Change directory to `pythonPoetry`
+9. Change directory to `pythonPoetry`
 
     ```
     cd ../pythonPoetry
     ```
 
-5. Install the project's dependencies as specified in the poetry.lock file.
+10. Install the project's dependencies as specified in the poetry.lock file.
 
     ```
     poetry install
     ```
-6. Run PythonPoetry project
+11. Run PythonPoetry project
 
     ```
     poetry run pythonPoetry
